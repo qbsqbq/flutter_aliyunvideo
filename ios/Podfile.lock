@@ -1,0 +1,43 @@
+PODS:
+  - AlivcConan (1.0.3):
+    - AlivcConan/AlivcConan (= 1.0.3)
+  - AlivcConan/AlivcConan (1.0.3)
+  - AliyunVideoSDKBasic (3.15.0)
+  - Flutter (1.0.0)
+  - MBProgressHUD (1.2.0)
+  - QuCore-ThirdParty (3.15.0)
+  - webview_flutter (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - AlivcConan (= 1.0.3)
+  - AliyunVideoSDKBasic (= 3.15.0)
+  - Flutter (from `.symlinks/flutter/ios`)
+  - MBProgressHUD
+  - QuCore-ThirdParty (= 3.15.0)
+  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AlivcConan
+    - AliyunVideoSDKBasic
+    - MBProgressHUD
+    - QuCore-ThirdParty
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  webview_flutter:
+    :path: ".symlinks/plugins/webview_flutter/ios"
+
+SPEC CHECKSUMS:
+  AlivcConan: afb3f657f23ae8476789deca6f14236f4cdd5d54
+  AliyunVideoSDKBasic: 69d7ca81063a8302a8b2de8bee6823bd7505ef1f
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  QuCore-ThirdParty: f3c49341745bd366e8557a8994407cbbda5c1c44
+  webview_flutter: db3aba222b23e4dc432e0c5882834123dc50ff9f
+
+PODFILE CHECKSUM: 3088a323a848cf6c0535b7a3e0d0ac317b6a9675
+
+COCOAPODS: 1.9.1

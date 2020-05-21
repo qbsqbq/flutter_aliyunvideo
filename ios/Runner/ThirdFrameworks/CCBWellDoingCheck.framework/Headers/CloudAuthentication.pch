@@ -1,0 +1,125 @@
+//
+//  CloudAuthentication.pch
+//  CloudAuthentication
+//
+//  Created by Guy on 2018/3/28.
+//  Copyright © 2018年 ccbMobileBank. All rights reserved.
+//
+
+#ifndef CloudAuthentication_pch
+#define CloudAuthentication_pch
+
+
+#define MBSAmpersandCharacter @"&"
+#define MBSQUESTION_MARK @"?"
+#define MBSEQUAL_MARK @"="
+#define MBSWhiteSpace @" "
+
+////////////--------------------------通讯封包关键字----------------///////////////////////
+#define K_BASE_status @"status"
+#define K_BASE_params @"params"
+#define K_BASE_txCode @"txCode"
+#define K_BASE_result @"result"
+#define K_BASE_id @"id"
+#define K_BASE_header @"header"
+#define K_BASE_request @"request"
+#define K_BASE_JSON @"JSON"
+#define K_BASE_version @"version"
+#define K_BASE_preassociated @"preassociated"
+#define K_BASE_statusSucc @"01"
+#define K_BASE_statusFail @"00"
+#define K_BASE_errMessage @"errMessage"
+#define K_BASE_errCode @"errCode"
+#define K_BASE_response @"response"
+
+#define K_BASE_Code_Prefix @"!![C#C%B*K�e£y¥B$o&a11r22d]!!::"
+
+#define MBS_Comm_TimeOutInterval 30
+
+// 网站通讯的时候，不需要对中文进行编码的交易
+#define CCB_COM_UNEncodeTxCode @[]
+
+#define YX_Comm_PostArray_Key @"YXCOMMPOSTARRAY"
+
+#define CCB_COM_RequestTxcode @[@"6GT001",@"6GT002",@"6GT003",@"6GT005",@"6GT006",@"6GT007",@"6GT012",@"6GT013",@"6GT035",@"6GT060",@"6GT063",@"6GT091",@"6GT00C",@"6GT00B",@"TPEA02",@"TPEA07",@"TPEA05",@"TPZ000",@"TPZ100",@"TPN001",@"TPR200",@"TP1301",@"TPZF01",@"TPR781",@"TPEW01",@"TPZ001",@"6GT092",@"TPDBC5",@"TP1661",@"TP1663",@"TP1547",@"6GT064"]
+
+//定义操作系统版本
+#define ios10 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=10.0?YES:NO)
+#define ios9 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=9.0?YES:NO)
+#define ios8 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=8.0?YES:NO)
+#define ios7 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=7.0?YES:NO)
+#define ios6 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=6.0?YES:NO)
+
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CCBCommunication/CCBCommunication.h>
+#import "CCBFontConstants.h"
+//#import "ComConstants.h"
+
+#define kHideProgressHudTimes 45 //多少秒自动消除菊花
+#define kCanClickToHideProgressHudTimes 10 //多少秒可以点击消息菊花
+
+#import "UIView+Frame.h"
+#import "UIView+Toast.h"
+#import "CCBSetVarManager.h"
+//#import "NSString+Util.h"
+//#import "CCBFunctionUtil.h"
+//#import "CCBBaseError.h"
+//#import "SBJson.h"
+//#import "MJExtension.h"
+#import "CCBView.h"
+#import "CCBImageView.h"
+#import "CCBButton.h"
+#import "CCBLabel.h"
+
+#import "CCBFormItem.h"
+#import "CCBSwitchFormItem.h"
+
+#import "M.h"
+
+#define CCBString(string) [M D:(string)]
+
+#import "CCBSizeConstants.h"
+#import "CCBColorConstants.h"
+#import "CCBImageConstants.h"
+
+//#import <eSafeAPI/eSafeLib.h>
+
+//# import <CheckSignManager/CCBEsafeForJS.h>
+//# import <CheckSignManager/CheckSignManager.h>
+#import <CheckSignManager/CheckSignManager.h>
+
+
+
+//#import "CCBBaseViewModel.h"
+#import <CCBCommunication/CCBBaseViewModel.h>
+#import "CCBBaseFormViewModel.h"
+#import "CCBBaseFormViewModel+Private.h"
+
+#import "CCBNumLoadingView.h"
+//#import "CCBUserDefaults.h"
+
+//
+//#import "CCBCommandManager.h"
+//#import "CCBBaseViewModel.h"
+//#import "CCBBaseModel.h"
+//#import "CCBWapCommTime.h"
+//#import "CCBBaseError.h"
+#import "CCBViewController.h"
+
+//是否打印Log日志，否注释掉下行
+#define _SHOW_DEBUG_LOG_
+
+#ifdef _SHOW_DEBUG_LOG_
+#define CCBLogDebug(...) NSLog(__VA_ARGS__)
+#else
+#define CCBLogDebug(...)
+#endif
+
+
+
+
+#endif /* CloudAuthentication_pch */

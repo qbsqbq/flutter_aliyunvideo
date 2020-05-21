@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  Runner
+//
+//  Created by HopeSoft on 2020/4/1.
+//  Copyright © 2020 The Chromium Authors. All rights reserved.
+//
+
+#ifndef ShortVideo_h
+#define ShortVideo_h
+
+
+#endif /* ShortVideo_h */
+
+
+#ifdef __OBJC__
+
+#import "UIColor+AlivcHelper.h"
+
+#import "NSString+AlivcHelper.h"
+#import <UIKit/UIKit.h>
+#import "AlivcImage.h"
+#import "AlivcMacro.h"
+
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define SizeWidth(W) (W *CGRectGetWidth([[UIScreen mainScreen] bounds])/320)
+#define SizeHeight(H) (H *(ScreenHeight)/568)
+#define RGBToColor(R,G,B)  [UIColor colorWithRed:(R * 1.0) / 255.0 green:(G * 1.0) / 255.0 blue:(B * 1.0) / 255.0 alpha:1.0]
+#define rgba(R,G,B,A)  [UIColor colorWithRed:(R * 1.0) / 255.0 green:(G * 1.0) / 255.0 blue:(B * 1.0) / 255.0 alpha:A]
+
+
+#define BundleID [[NSBundle mainBundle] bundleIdentifier]
+//#define BundleID @"com.aliyun.apsaravideo"
+
+//#define BundleID @"com.aliyun.aliyunvideosdkpro"
+// 注释为Release版
+//#define kQPEnableDevNetwork
+
+#define kIntroduceUrl @"https://alivc-demo.aliyuncs.com/td.html"
+
+#define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height<812)?NO:YES)
+#define SafeTop (([[UIScreen mainScreen] bounds].size.height<812) ? 20 : 44)
+#define SafeBottom (([[UIScreen mainScreen] bounds].size.height<812) ? 0 : 34)
+#define SafeBeautyBottom (([[UIScreen mainScreen] bounds].size.height<812) ? 0 : 12)
+#define StatusBarHeight (([[UIScreen mainScreen] bounds].size.height<812) ? 20 : 44)
+#define NoStatusBarSafeTop (IS_IPHONEX ? 44 : 0)
+
+#define KquTabBarHeight  (IS_IPHONEX ? 100 : 0)
+
+
+
+
+#endif

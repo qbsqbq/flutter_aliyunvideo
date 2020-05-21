@@ -1,0 +1,6 @@
+framework module CCBCommunication {
+  umbrella header "CCBCommunication.h"
+
+  export *
+  module * { export * }
+}

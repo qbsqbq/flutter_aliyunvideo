@@ -1,0 +1,6 @@
+framework module CCBWellDoingCheck {
+  umbrella header "CCBWellDoingCheck.h"
+
+  export *
+  module * { export * }
+}
